@@ -333,28 +333,13 @@
     "when": "markdownEditorFocus && activeCustomEditorId == 'vscode.markdown.editor'"
   },
   {
-    "key": "up",
-    "command": "-markdown.editor.cursorUp",
-    "when": "markdownEditorFocus && activeCustomEditorId == 'vscode.markdown.editor'"
-  },
-  {
     "key": "ctrl+p",
     "command": "notebook.focusPreviousEditor",
     "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'both' && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none' || config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'start' && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
   },
   {
-    "key": "up",
-    "command": "-notebook.focusPreviousEditor",
-    "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'both' && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none' || config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'start' && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
-  },
-  {
     "key": "ctrl+p",
     "command": "notebook.focusPreviousEditor",
-    "when": "config.notebook.navigation.allowNavigateToSurroundingCells && notebookCursorNavigationMode && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && !notebookCellMarkdownEditMode && notebookCellType == 'markup'"
-  },
-  {
-    "key": "up",
-    "command": "-notebook.focusPreviousEditor",
     "when": "config.notebook.navigation.allowNavigateToSurroundingCells && notebookCursorNavigationMode && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && !notebookCellMarkdownEditMode && notebookCellType == 'markup'"
   },
   {
@@ -363,18 +348,8 @@
     "when": "editorHoverFocused"
   },
   {
-    "key": "up",
-    "command": "-editor.action.scrollUpHover",
-    "when": "editorHoverFocused"
-  },
-  {
     "key": "ctrl+p",
     "command": "cursorUp",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "up",
-    "command": "-cursorUp",
     "when": "textInputFocus"
   },
   {
@@ -383,18 +358,8 @@
     "when": "stickyScrollFocused"
   },
   {
-    "key": "up",
-    "command": "-editor.action.selectPreviousStickyScrollLine",
-    "when": "stickyScrollFocused"
-  },
-  {
     "key": "ctrl+p",
     "command": "focusPreviousRenameSuggestion",
-    "when": "renameInputVisible"
-  },
-  {
-    "key": "up",
-    "command": "-focusPreviousRenameSuggestion",
     "when": "renameInputVisible"
   },
   {
@@ -403,18 +368,8 @@
     "when": "historyNavigationBackwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
   },
   {
-    "key": "up",
-    "command": "-history.showPrevious",
-    "when": "historyNavigationBackwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
-  },
-  {
     "key": "ctrl+p",
     "command": "interactive.history.previous",
-    "when": "isCompositeNotebook && !notebookEditorFocused && !suggestWidgetVisible && interactiveInputCursorAtBoundary != 'bottom' && interactiveInputCursorAtBoundary != 'none'"
-  },
-  {
-    "key": "up",
-    "command": "-interactive.history.previous",
     "when": "isCompositeNotebook && !notebookEditorFocused && !suggestWidgetVisible && interactiveInputCursorAtBoundary != 'bottom' && interactiveInputCursorAtBoundary != 'none'"
   },
   {
@@ -423,23 +378,8 @@
     "when": "listFocus && !inputFocus && !treestickyScrollFocused"
   },
   {
-    "key": "up",
-    "command": "-list.focusUp",
-    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
-  },
-  {
-    "key": "up",
-    "command": "-notebook.cell.nullAction",
-    "when": "notebookOutputInputFocused"
-  },
-  {
     "key": "ctrl+p",
     "command": "notifications.focusPreviousToast",
-    "when": "notificationFocus && notificationToastsVisible"
-  },
-  {
-    "key": "up",
-    "command": "-notifications.focusPreviousToast",
     "when": "notificationFocus && notificationToastsVisible"
   },
   {
@@ -448,18 +388,8 @@
     "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
   },
   {
-    "key": "up",
-    "command": "-quickInput.previous",
-    "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
-  },
-  {
     "key": "ctrl+p",
     "command": "scm.viewPreviousCommit",
-    "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
-  },
-  {
-    "key": "up",
-    "command": "-scm.viewPreviousCommit",
     "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
   },
   {
@@ -468,18 +398,8 @@
     "when": "codeActionMenuVisible"
   },
   {
-    "key": "up",
-    "command": "-selectPrevCodeAction",
-    "when": "codeActionMenuVisible"
-  },
-  {
     "key": "ctrl+p",
     "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-  },
-  {
-    "key": "up",
-    "command": "-selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
@@ -488,18 +408,8 @@
     "when": "inSettingsEditor && settingFirstRowFocus && settingRowFocus"
   },
   {
-    "key": "up",
-    "command": "-settings.action.focusSearchFromSettings",
-    "when": "inSettingsEditor && settingFirstRowFocus && settingRowFocus"
-  },
-  {
     "key": "ctrl+p",
     "command": "settings.action.showPreviousSearch",
-    "when": "inSettingsSearch && !suggestWidgetVisible"
-  },
-  {
-    "key": "up",
-    "command": "-settings.action.showPreviousSearch",
     "when": "inSettingsSearch && !suggestWidgetVisible"
   },
   {
@@ -508,18 +418,8 @@
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
   },
   {
-    "key": "up",
-    "command": "-showPrevParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
     "key": "ctrl+p",
     "command": "workbench.action.interactivePlayground.arrowUp",
-    "when": "interactivePlaygroundFocus && !editorTextFocus"
-  },
-  {
-    "key": "up",
-    "command": "-workbench.action.interactivePlayground.arrowUp",
     "when": "interactivePlaygroundFocus && !editorTextFocus"
   },
   {
@@ -528,28 +428,13 @@
     "when": "config.terminal.integrated.suggest.upArrowNavigatesHistory && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && !simpleSuggestWidgetHasNavigated || config.terminal.integrated.suggest.upArrowNavigatesHistory && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && !simpleSuggestWidgetHasNavigated"
   },
   {
-    "key": "up",
-    "command": "-workbench.action.terminal.hideSuggestWidgetAndNavigateHistory",
-    "when": "config.terminal.integrated.suggest.upArrowNavigatesHistory && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && !simpleSuggestWidgetHasNavigated || config.terminal.integrated.suggest.upArrowNavigatesHistory && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && !simpleSuggestWidgetHasNavigated"
-  },
-  {
     "key": "ctrl+p",
     "command": "workbench.action.terminal.selectPrevSuggestion",
     "when": "simpleSuggestWidgetHasNavigated && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasNavigated && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible || terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && !config.terminal.integrated.suggest.upArrowNavigatesHistory || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && !config.terminal.integrated.suggest.upArrowNavigatesHistory"
   },
   {
-    "key": "up",
-    "command": "-workbench.action.terminal.selectPrevSuggestion",
-    "when": "simpleSuggestWidgetHasNavigated && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasNavigated && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible || terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && !config.terminal.integrated.suggest.upArrowNavigatesHistory || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && !config.terminal.integrated.suggest.upArrowNavigatesHistory"
-  },
-  {
     "key": "ctrl+b",
     "command": "workbench.banner.focusPreviousAction",
-    "when": "bannerFocused"
-  },
-  {
-    "key": "up",
-    "command": "-workbench.banner.focusPreviousAction",
     "when": "bannerFocused"
   },
   {
