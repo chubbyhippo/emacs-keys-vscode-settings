@@ -328,11 +328,6 @@
     "when": "statusBarFocused"
   },
   {
-    "key": "up",
-    "command": "-workbench.statusBar.focusPrevious",
-    "when": "statusBarFocused"
-  },
-  {
     "key": "ctrl+b",
     "command": "markdown.editor.cursorLeft",
     "when": "markdownEditorFocus && activeCustomEditorId == 'vscode.markdown.editor'"
