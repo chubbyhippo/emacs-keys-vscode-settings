@@ -103,28 +103,13 @@
     "when": "markdownEditorFocus && activeCustomEditorId == 'vscode.markdown.editor'"
   },
   {
-    "key": "down",
-    "command": "-markdown.editor.cursorDown",
-    "when": "markdownEditorFocus && activeCustomEditorId == 'vscode.markdown.editor'"
-  },
-  {
     "key": "ctrl+n",
     "command": "notebook.focusNextEditor",
     "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'both' && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top' || config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'end' && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
   },
   {
-    "key": "down",
-    "command": "-notebook.focusNextEditor",
-    "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'both' && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top' || config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtLineBoundary == 'end' && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
-  },
-  {
     "key": "ctrl+n",
     "command": "notebook.focusNextEditor",
-    "when": "config.notebook.navigation.allowNavigateToSurroundingCells && notebookCursorNavigationMode && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && !notebookCellMarkdownEditMode && notebookCellType == 'markup'"
-  },
-  {
-    "key": "down",
-    "command": "-notebook.focusNextEditor",
     "when": "config.notebook.navigation.allowNavigateToSurroundingCells && notebookCursorNavigationMode && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && !notebookCellMarkdownEditMode && notebookCellType == 'markup'"
   },
   {
@@ -133,18 +118,8 @@
     "when": "editorHoverFocused"
   },
   {
-    "key": "down",
-    "command": "-editor.action.scrollDownHover",
-    "when": "editorHoverFocused"
-  },
-  {
     "key": "ctrl+n",
     "command": "breadcrumbs.selectFocused",
-    "when": "breadcrumbsActive && breadcrumbsVisible"
-  },
-  {
-    "key": "down",
-    "command": "-breadcrumbs.selectFocused",
     "when": "breadcrumbsActive && breadcrumbsVisible"
   },
   {
@@ -153,18 +128,8 @@
     "when": "textInputFocus"
   },
   {
-    "key": "down",
-    "command": "-cursorDown",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+n",
     "command": "editor.action.selectNextStickyScrollLine",
-    "when": "stickyScrollFocused"
-  },
-  {
-    "key": "down",
-    "command": "-editor.action.selectNextStickyScrollLine",
     "when": "stickyScrollFocused"
   },
   {
@@ -173,18 +138,8 @@
     "when": "renameInputVisible"
   },
   {
-    "key": "down",
-    "command": "-focusNextRenameSuggestion",
-    "when": "renameInputVisible"
-  },
-  {
     "key": "ctrl+n",
     "command": "history.showNext",
-    "when": "historyNavigationForwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
-  },
-  {
-    "key": "down",
-    "command": "-history.showNext",
     "when": "historyNavigationForwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
   },
   {
@@ -193,18 +148,8 @@
     "when": "isCompositeNotebook && !notebookEditorFocused && !suggestWidgetVisible && interactiveInputCursorAtBoundary != 'none' && interactiveInputCursorAtBoundary != 'top'"
   },
   {
-    "key": "down",
-    "command": "-interactive.history.next",
-    "when": "isCompositeNotebook && !notebookEditorFocused && !suggestWidgetVisible && interactiveInputCursorAtBoundary != 'none' && interactiveInputCursorAtBoundary != 'top'"
-  },
-  {
     "key": "ctrl+n",
     "command": "list.focusDown",
-    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
-  },
-  {
-    "key": "down",
-    "command": "-list.focusDown",
     "when": "listFocus && !inputFocus && !treestickyScrollFocused"
   },
   {
@@ -213,18 +158,8 @@
     "when": "notebookOutputInputFocused"
   },
   {
-    "key": "down",
-    "command": "-notebook.cell.nullAction",
-    "when": "notebookOutputInputFocused"
-  },
-  {
     "key": "ctrl+n",
     "command": "notifications.focusNextToast",
-    "when": "notificationFocus && notificationToastsVisible"
-  },
-  {
-    "key": "down",
-    "command": "-notifications.focusNextToast",
     "when": "notificationFocus && notificationToastsVisible"
   },
   {
@@ -233,18 +168,8 @@
     "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
   },
   {
-    "key": "down",
-    "command": "-quickInput.next",
-    "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
-  },
-  {
     "key": "ctrl+n",
     "command": "scm.viewNextCommit",
-    "when": "scmInputIsInLastPosition && scmRepository && !suggestWidgetVisible"
-  },
-  {
-    "key": "down",
-    "command": "-scm.viewNextCommit",
     "when": "scmInputIsInLastPosition && scmRepository && !suggestWidgetVisible"
   },
   {
@@ -253,18 +178,8 @@
     "when": "codeActionMenuVisible"
   },
   {
-    "key": "down",
-    "command": "-selectNextCodeAction",
-    "when": "codeActionMenuVisible"
-  },
-  {
     "key": "ctrl+n",
     "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-  },
-  {
-    "key": "down",
-    "command": "-selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
@@ -273,18 +188,8 @@
     "when": "inSettingsSearch && !suggestWidgetVisible"
   },
   {
-    "key": "down",
-    "command": "-settings.action.focusSettingsFromSearch",
-    "when": "inSettingsSearch && !suggestWidgetVisible"
-  },
-  {
     "key": "ctrl+n",
     "command": "showNextParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
-    "key": "down",
-    "command": "-showNextParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
   },
   {
@@ -293,18 +198,8 @@
     "when": "interactivePlaygroundFocus && !editorTextFocus"
   },
   {
-    "key": "down",
-    "command": "-workbench.action.interactivePlayground.arrowDown",
-    "when": "interactivePlaygroundFocus && !editorTextFocus"
-  },
-  {
     "key": "ctrl+n",
     "command": "workbench.action.terminal.selectNextSuggestion",
-    "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
-  },
-  {
-    "key": "down",
-    "command": "-workbench.action.terminal.selectNextSuggestion",
     "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
   },
   {
@@ -313,18 +208,8 @@
     "when": "bannerFocused"
   },
   {
-    "key": "down",
-    "command": "-workbench.banner.focusNextAction",
-    "when": "bannerFocused"
-  },
-  {
     "key": "ctrl+f",
     "command": "workbench.statusBar.focusNext",
-    "when": "statusBarFocused"
-  },
-  {
-    "key": "down",
-    "command": "-workbench.statusBar.focusNext",
     "when": "statusBarFocused"
   },
   {
