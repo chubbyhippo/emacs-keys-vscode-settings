@@ -688,18 +688,8 @@
     "when": "markdownEditorFocus && activeCustomEditorId == 'vscode.markdown.editor'"
   },
   {
-    "key": "right",
-    "command": "-markdown.editor.cursorRight",
-    "when": "markdownEditorFocus && activeCustomEditorId == 'vscode.markdown.editor'"
-  },
-  {
     "key": "ctrl+f",
     "command": "notebook.unfold",
-    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
-  },
-  {
-    "key": "right",
-    "command": "-notebook.unfold",
     "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
   },
   {
@@ -708,18 +698,8 @@
     "when": "editorHoverFocused"
   },
   {
-    "key": "right",
-    "command": "-editor.action.scrollRightHover",
-    "when": "editorHoverFocused"
-  },
-  {
     "key": "ctrl+f",
     "command": "breadcrumbs.focusNext",
-    "when": "breadcrumbsActive && breadcrumbsVisible"
-  },
-  {
-    "key": "right",
-    "command": "-breadcrumbs.focusNext",
     "when": "breadcrumbsActive && breadcrumbsVisible"
   },
   {
@@ -728,18 +708,8 @@
     "when": "textInputFocus"
   },
   {
-    "key": "right",
-    "command": "-cursorRight",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+f",
     "command": "expandSectionCodeAction",
-    "when": "codeActionMenuVisible && !codeActionMenuFilterFocused"
-  },
-  {
-    "key": "right",
-    "command": "-expandSectionCodeAction",
     "when": "codeActionMenuVisible && !codeActionMenuFilterFocused"
   },
   {
@@ -748,18 +718,8 @@
     "when": "listFocus && treeElementCanExpand && !inputFocus && !treestickyScrollFocused || listFocus && treeElementHasChild && !inputFocus && !treestickyScrollFocused"
   },
   {
-    "key": "right",
-    "command": "-list.expand",
-    "when": "listFocus && treeElementCanExpand && !inputFocus && !treestickyScrollFocused || listFocus && treeElementHasChild && !inputFocus && !treestickyScrollFocused"
-  },
-  {
     "key": "ctrl+f",
     "command": "nextCompressedFolder",
-    "when": "explorerViewletCompressedFocus && filesExplorerFocus && foldersViewVisible && !explorerViewletCompressedLastFocus && !inputFocus"
-  },
-  {
-    "key": "right",
-    "command": "-nextCompressedFolder",
     "when": "explorerViewletCompressedFocus && filesExplorerFocus && foldersViewVisible && !explorerViewletCompressedLastFocus && !inputFocus"
   },
   {
@@ -776,20 +736,5 @@
     "key": "ctrl+f",
     "command": "quickInput.acceptInBackground",
     "when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
-  },
-  {
-    "key": "right",
-    "command": "-quickInput.acceptInBackground",
-    "when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
-  },
-  {
-    "key": "right",
-    "command": "-workbench.banner.focusNextAction",
-    "when": "bannerFocused"
-  },
-  {
-    "key": "right",
-    "command": "-workbench.statusBar.focusNext",
-    "when": "statusBarFocused"
   },
 ]
